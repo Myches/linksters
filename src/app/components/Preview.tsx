@@ -59,7 +59,7 @@ export default function Preview() {
         <div className="flex-1 flex flex-col justify-center items-center pt-4 px-4">
           {profileInfo?.profileImage && (
             <div className="w-24 h-24 rounded-full border-[4px] border-violet-400 overflow-hidden mb-2">
-              <img src={profileInfo.profileImage} alt="Profile" className="w-full h-full object-cover" />
+              <Image src={profileInfo.profileImage} alt="Profile" className="w-full h-full object-cover" />
             </div>
           )}
           <p className="text-xl font-semibold text-gray-500 truncate w-full text-center">

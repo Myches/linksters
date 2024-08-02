@@ -97,7 +97,7 @@ export default function Home() {
           </button>
           {error && <p className="text-red-500 text-sm mt-2">{error}</p>}
           <h2 className="text-sm md:text-[16px] pt-2 flex justify-center items-center">
-            Don't have an account?{" "}
+          Don&apos;t have an account?{" "}
             <Link href="/create" className="px-2 text-violet-600">
               Create account
             </Link>

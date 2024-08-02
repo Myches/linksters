@@ -59,7 +59,7 @@ export default function Create() {
             Create Account
           </h1>
           <p className="text-sm md:text-[16px] text-gray-400">
-            Let's get you started sharing your links
+          Let&apos;s get you started sharing your links
           </p>
 
           <div className="pt-4 text-xs md:text-[12px] text-gray-600 space-y-2">
