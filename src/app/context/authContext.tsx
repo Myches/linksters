@@ -65,12 +65,12 @@ export const AuthContextProvider: React.FC<{ children: React.ReactNode }> = ({ c
   async function signUp(email: string, password: string): Promise<UserCredential> {
     try {
       const userCredential = await createUserWithEmailAndPassword(auth, email, password);
-      // You might want to do additional setup here, like creating a user profile
+
       return userCredential;
     } catch (error) {
       console.error("Error in signUp:", error);
       if (error instanceof Error) {
-        // Here you can check for specific Firebase error codes and throw more informative errors
+      
         throw new Error(`Failed to sign up: ${error.message}`);
       } else {
         throw new Error("An unknown error occurred during sign up");
@@ -173,7 +173,7 @@ export const AuthContextProvider: React.FC<{ children: React.ReactNode }> = ({ c
 
   return (
     <AuthContext.Provider value={value}>
-      {loading ? <div>Loading...</div> : children}
+      {children}
     </AuthContext.Provider>
   );
 };
